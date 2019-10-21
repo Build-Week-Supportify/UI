@@ -156,11 +156,8 @@ p {
   line-height: 1.4;
 }
 body {
-  border: 1px solid gray;
+  background: rebeccapurple;
   max-width: 100%;
-}
-.big-container {
-  padding: 4%;
 }
 .big-container {
   padding: 4%;
@@ -173,4 +170,7 @@ header {
 }
 header .top-nav {
   width: 100%;
+}
+.big-container {
+  padding: 4%;
 }
