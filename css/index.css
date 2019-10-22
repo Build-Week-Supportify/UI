@@ -158,33 +158,31 @@ p {
 body {
   margin: 0 auto;
   height: 100%;
+  background-color: #D5F5E3;
 }
-h1 {
+body h1 {
   font-size: 3.5rem;
   text-align: center;
   margin: 2% 2% 0;
 }
-.hp-cta {
+body .hp-cta {
   background-color: #F7DC6F;
   width: 100%;
   height: 10vh;
 }
-.top-nav {
+body .top-nav {
   display: flex;
   justify-content: center;
   width: 100%;
+  background-color: #F7DC6F;
 }
-a {
+body a {
   text-decoration: none;
   padding: 2%;
   margin: 2% 3%;
   font-size: 2.5rem;
 }
-a :hover {
-  background-color: #F6F7F8;
-  color: #973FFF;
-}
-.btn {
+body .btn {
   width: 10%;
   height: 3.5vh;
   font-size: 1.7rem;
@@ -194,15 +192,15 @@ a :hover {
   margin-top: 3%;
   margin-right: 7%;
 }
-.btn:hover {
+body .btn:hover {
   background-color: #F6F7F8;
   color: #973FFF;
 }
-.btn:hover {
+body .btn:hover {
   background-color: #F6F7F8;
   color: #973FFF;
 }
-.btn1 {
+body .btn1 {
   width: 10%;
   height: 3.5vh;
   font-size: 1.7rem;
@@ -213,11 +211,11 @@ a :hover {
   margin-right: 7%;
   margin-right: 4%;
 }
-.btn1:hover {
+body .btn1:hover {
   background-color: #F6F7F8;
   color: #973FFF;
 }
-.btn1:hover {
+body .btn1:hover {
   background-color: #F6F7F8;
   color: #973FFF;
 }
@@ -268,6 +266,7 @@ a :hover {
 .big-container .middle-section .buy-points ul {
   font-family: 'ubuntu', sans-serif;
   font-size: 2rem;
+  margin-left: 12%;
 }
 .big-container .middle-section h3 {
   padding: 2%;
@@ -287,6 +286,7 @@ a :hover {
   font-size: 2rem;
   text-align: center;
   color: #23293B;
+  margin-bottom: 5%;
 }
 .big-container .middle-section .board-members {
   width: 40%;
@@ -300,6 +300,7 @@ a :hover {
   font-size: 2rem;
   text-align: center;
   color: #23293B;
+  margin-bottom: 5%;
 }
 .big-container .middle-section .text2 {
   width: 100%;
@@ -307,12 +308,12 @@ a :hover {
 }
 .big-container .testimonial-wrapper {
   width: 100%;
-  height: 30vh;
+  height: 25vh;
   padding: 4% 0;
 }
 .big-container .testimonial-wrapper .testimls {
   width: 100%;
-  height: 15vh;
+  height: 12vh;
   display: flex;
 }
 .big-container .testimonial-wrapper h2 {
@@ -328,21 +329,25 @@ a :hover {
   width: 100%;
   font-size: 2rem;
   margin-left: 10%;
-  height: 100%;
+  height: 8vh;
 }
 .big-container .use-media {
   width: 25%;
-  height: 25vh;
+  height: 27vh;
   background-color: #62D0DF;
   border: 1px dashed #973FFF;
 }
+.big-container .use-media form {
+  margin: 18% 18%;
+}
+.big-container .use-media form input {
+  width: 15vw;
+}
 .big-container .use-media footer {
   width: 100%;
-  height: 30vh;
-  display: flex;
-  align-items: center;
+  height: 20%;
   margin: 5%;
 }
 .big-container .use-media footer .wrapper {
-  padding: 10%;
+  text-align: center;
 }
