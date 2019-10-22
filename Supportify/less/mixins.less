@@ -1,1 +1,17 @@
-//add mixins/////
+//custom button
+.custom-btn(@btn-txt-color, @btn-bg-color) {
+    width: 10%;
+    height: 4vh;
+    font-size: 1.7rem;
+    border-radius: 5px;
+    background: @btn-bg-color;
+    color: @btn-txt-color;
+    margin-top: 3%;
+    margin-right: 7%;
+    
+    &:hover{
+        background-color: @btn-txt-color;
+        color: @btn-bg-color;
+    }
+
+}
