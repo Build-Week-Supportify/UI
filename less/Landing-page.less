@@ -4,20 +4,54 @@
     max-width: 900px;
     margin: 0 auto;
     height: 100%;
+    header {
+
+        width: 100%;
+        height: 40%;
+            
     
-
-  
+        b {
+            font-weight: bolder;
+            }
+        h3 {
+            text-align: center;
+            height: 8vh;
+            margin: 4% 0;
+            color: @lt-purple;
+            font-size: 3rem;;
+    
+                    // background-color: @nav-bg;
+        }//closes h3
+        .pic-wrapper {
+            position: relative;                   
+            width: 100%;
+            color: @porcelain;
+            text-align: center;
+            h1 {
+                position: absolute;
+                z-index: 1                     
+            }//closes H1           
+                .topbkgrd {
+                    width: 100%;       
+                }//closes topbkgrd
+                                   
+        }//closes pic wrapper
+    }//closes header 
   .middle-section {
-
+        border-radius: 6px;
         background-color: @cyan;
         width: 100%;
-        height: 40vh;
+        height: 50vh;
         background-color: @cyan;
         .buy-points {
             display: flex;
             justify-content: space-around;
             width: 100%;
-            height: 20%;
+            height: 60%;
+            ul {
+                font-family: 'ubuntu', sans-serif;
+                font-size: 2rem;;
+            }
             
         }
         
@@ -27,20 +61,23 @@
             text-align: center;
         }//closses h3
         .administrators {
-            width: 47%;
-            height: 29vh;
+            width: 40%;
+            height: 35vh;
             background-color: @porcelain;
             padding: 2%;
+            border-radius: 3%;
+            color: @darkslategray;
         }//closes administrator
         h4 {
             font-size: 2rem;
             text-align: center;
         }
         .board-members {
-            width: 47%;
-            height: 29vh;
+            width: 40%;
+            height: 35vh;
             background-color: @porcelain;
             padding: 2%;
+            border-radius: 3%;
             p {
                 
             }
@@ -59,52 +96,8 @@
             .text2 {
                 width: 100%;
                 height: 30%;
-            }
-      
-
-  }//closes middle-section
-    .pic-wrapper {
-        position: relative;
-        
-        width: 100%;
-        color: @porcelain;
-        text-align: center;
-        h1 {
-            position: absolute;
-            z-index: 1;
-            
-          
-        }//closes H1
-
-        .topbkgrd {
-            width: 100%;       
-        }//closes topbkgrd
-
-            
-            
-    }//closes pic wrapper
-
-        
-   
-    header {
-
-    width: 100%;
-    height: 40%;
-        
-
-            b {
-                font-weight: bolder;
-            }
-            h3 {
-                text-align: center;
-                height: 8vh;
-                margin: 4% 0;
-                color: @lt-purple;
-                font-size: 3rem;;
-
-                // background-color: @nav-bg;
-            }//closes h3                  
-    }//closes header
+            }//close T2
+  }//closes middle-section    
     .testimonial-wrapper {
         width:100%;
         height: 30vh;
@@ -132,8 +125,7 @@
                 margin-left: 10%;
                 height: 100%;
                 
-        }//closes h4
-    
+        }//closes h4    
     }//closes testimonial-wrapper
     footer {
         width: 100%;
