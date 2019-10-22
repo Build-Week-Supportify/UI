@@ -227,7 +227,7 @@ a :hover {
 }
 .big-container .middle-section {
   width: 100%;
-  height: 30vh;
+  height: 40vh;
   background-color: #62D0DF;
 }
 .big-container .middle-section .buy-points {
@@ -243,7 +243,7 @@ a :hover {
 }
 .big-container .middle-section .administrators {
   width: 47%;
-  height: 18vh;
+  height: 29vh;
   background-color: #F6F7F8;
   padding: 2%;
 }
@@ -253,7 +253,7 @@ a :hover {
 }
 .big-container .middle-section .board-members {
   width: 47%;
-  height: 18vh;
+  height: 29vh;
   background-color: #F6F7F8;
   padding: 2%;
 }
@@ -266,9 +266,14 @@ a :hover {
   height: 30%;
 }
 .big-container .pic-wrapper {
+  position: relative;
   width: 100%;
   color: #F6F7F8;
   text-align: center;
+}
+.big-container .pic-wrapper h1 {
+  position: absolute;
+  z-index: 1;
 }
 .big-container .pic-wrapper .topbkgrd {
   width: 100%;
@@ -284,28 +289,39 @@ a :hover {
   text-align: center;
   height: 8vh;
   margin: 4% 0;
+  color: #973FFF;
   font-size: 3rem;
 }
 .big-container .testimonial-wrapper {
   width: 100%;
-  height: 40vh;
+  height: 30vh;
+  padding: 4% 0;
 }
 .big-container .testimonial-wrapper .testimls {
   width: 100%;
   height: 15vh;
+  display: flex;
 }
 .big-container .testimonial-wrapper h2 {
   width: 35%;
   font-weight: 400;
+  color: #973FFF;
 }
-.big-container .testimonial-wrapper h3 {
-  display: flex;
-  text-align: end;
+.big-container .testimonial-wrapper .inner {
+  align-items: flex-end;
+  width: 70%;
+}
+.big-container .testimonial-wrapper h4 {
+  width: 100%;
+  font-size: 2rem;
+  margin-left: 10%;
+  height: 100%;
 }
 .big-container footer {
   width: 100%;
-  height: 10vh;
+  height: 100%;
+  text-align: center;
 }
 .big-container footer .wrapper {
-  text-align: center;
+  padding: 10%;
 }

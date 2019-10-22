@@ -8,11 +8,10 @@
 
   
   .middle-section {
-        // margin: 4%;
-       
+
         background-color: @cyan;
         width: 100%;
-        height: 30vh;
+        height: 40vh;
         background-color: @cyan;
         .buy-points {
             display: flex;
@@ -29,7 +28,7 @@
         }//closses h3
         .administrators {
             width: 47%;
-            height: 18vh;
+            height: 29vh;
             background-color: @porcelain;
             padding: 2%;
         }//closes administrator
@@ -39,7 +38,7 @@
         }
         .board-members {
             width: 47%;
-            height: 18vh;
+            height: 29vh;
             background-color: @porcelain;
             padding: 2%;
             p {
@@ -65,13 +64,18 @@
 
   }//closes middle-section
     .pic-wrapper {
+        position: relative;
         
         width: 100%;
         color: @porcelain;
         text-align: center;
-        
-    
-    
+        h1 {
+            position: absolute;
+            z-index: 1;
+            
+          
+        }//closes H1
+
         .topbkgrd {
             width: 100%;       
         }//closes topbkgrd
@@ -95,7 +99,7 @@
                 text-align: center;
                 height: 8vh;
                 margin: 4% 0;
-                // font-weight: 400;
+                color: @lt-purple;
                 font-size: 3rem;;
 
                 // background-color: @nav-bg;
@@ -103,32 +107,47 @@
     }//closes header
     .testimonial-wrapper {
         width:100%;
-        height: 40vh;
+        height: 30vh;
+        padding: 4% 0;
         .testimls {
             width: 100%;
             height: 15vh;
-
+            display: flex;
         }//closes testimls
+
             h2 {
                 width: 35%;
                 font-weight: 400;
-        }//closes h2
-            h3 {
-                // width: 65%;
-                display: flex;
-                text-align: end;;;
-        
+                color: @lt-purple;
 
-        }
+        }//closes h2
+            .inner {
+                align-items: flex-end;
+                width: 70%;
+               
+            }//closes inner
+            h4 {
+                width: 100%;
+                font-size: 2rem;
+                margin-left: 10%;
+                height: 100%;
+                
+        }//closes h4
     
     }//closes testimonial-wrapper
     footer {
         width: 100%;
-        height: 10vh;
+        height: 100%;
+        text-align: center;
+        
         .wrapper {
-            text-align: center;
-        }
-    
+            padding: 10%;
+
+        }//wrapper
+
+    .use-media {
+        // padding: 4%;
     }
+    }//closes footer
 
 }//closes container
