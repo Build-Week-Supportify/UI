@@ -219,6 +219,18 @@ body .btn1:hover {
   background-color: #F6F7F8;
   color: #973FFF;
 }
+footer {
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #AED6F1;
+  border-top: 1px solid #973FFF;
+}
+footer span {
+  color: #973FFF;
+  margin-top: 8%;
+}
 .big-container {
   max-width: 900px;
   margin: 0 auto;
@@ -318,6 +330,7 @@ body .btn1:hover {
 }
 .big-container .testimonial-wrapper h2 {
   width: 35%;
+  height: 5vh;
   font-weight: 400;
   color: #973FFF;
 }
@@ -331,23 +344,9 @@ body .btn1:hover {
   margin-left: 10%;
   height: 8vh;
 }
-.big-container .use-media {
-  width: 25%;
-  height: 27vh;
-  background-color: #62D0DF;
-  border: 1px dashed #973FFF;
-}
-.big-container .use-media form {
-  margin: 18% 18%;
-}
-.big-container .use-media form input {
-  width: 15vw;
-}
-.big-container .use-media footer {
+.big-container .aprons {
   width: 100%;
-  height: 20%;
-  margin: 5%;
-}
-.big-container .use-media footer .wrapper {
-  text-align: center;
+  height: 40
+        2vh;
+  opacity: unset;
 }
