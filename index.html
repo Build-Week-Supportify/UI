@@ -39,9 +39,10 @@
 
     <header>
       <div class="'pic-wrapper'">
-
-        <img class="top-bkgrd" src="img/top-bkgrd.jpg" alt="Man writing on message board">
+        
+         <img class="top-bkgrd" src="img/top-bkgrd.jpg" alt="Man writing on message board">
         <!-- <h1>Supportify</h1> -->
+       
       </div>
       <div class="head-wrap">
         <b>
@@ -154,17 +155,36 @@
     <section class="Bottom">
 
       <img class="aprons" src="img/aprons.jpg" alt="">
+      <div id="overlay" onclick="off()">
+          <div id="text">Overlay Text</div>
+        </div>
+        
+        <div style="padding:20px">
+          <h2>Supportify</h2>
+          <button onclick="on()">Turn on overlay effect</button>
+        </div>
+        
+        <script>
+        function on() {
+          document.getElementById("overlay").style.display = "block";
+        }
+        
+        function off() {
+          document.getElementById("overlay").style.display = "none";
+        }
+        </script>
 
       <style></style>
     </section>
   </div>
   <footer>
-    <div class="social">
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="far fa-envelope"></i>
-    </div>
+      <div class="icon-bar">
+          <a class="active" href="#"><i class="fa fa-home"></i></a>
+          <a href="#"><i class="fa fa-search"></i></a>
+          <a href="#"><i class="fa fa-envelope"></i></a>
+          <a href="#"><i class="fa fa-globe"></i></a>
+          <a href="#"><i class="fa fa-trash"></i></a>
+        </div>
     <span>Copyright 2019</span>
   </footer>
   </div>
