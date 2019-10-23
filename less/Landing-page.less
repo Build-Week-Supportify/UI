@@ -4,6 +4,9 @@
     max-width: 900px;
     margin: 0 auto;
     height: 100%;
+    @media@tablet {
+        max-width: 700px;
+    }
     header {
 
         width: 100%;
@@ -28,6 +31,10 @@
             width: 100%;
             color: @porcelain;
             text-align: center;
+            @media@tablet {
+                max-width: 700px;
+                
+            }
             @media@phone {
                 display: none;
             }
@@ -37,6 +44,10 @@
             }//closes H1           
                 .topbkgrd {
                     width: 100%;
+                    @media@tablet {
+                       
+
+                    }
                     @media@phone {
                         display: none;
                         
@@ -93,18 +104,75 @@
             padding: 2%;
             border-radius: 3%;
             color: @darkslategray;
-            p {
+          
+            // .imageDiv 
                 
-            }
-            .outter-box {
+            //         margin-left: 100px;
+            //         background: #fff;
+            //         display: block;
+            //         width: 345px;
+            //         height: 220px;
+            //         padding: 10px;
+            //         border-radius: 2px 2px 2px 2px;
+            //         -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            //         -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            //         box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            //     
                 
-            }
+            
                 h4 {
                     font-size: 2rem;
                     text-align: center;
                     color: @ebony-clay;
                     margin-bottom: 5%;
                 }
+                pink, .blue, .orange, .purple {
+                    position: absolute;
+                  }
+                  
+                  .pink {
+                    z-index: 1; /* creates a new stacking context */
+                    top: 70px;
+                    left: 70px;
+                    background: rgb(239, 71, 111);
+                  }
+                  
+                  .blue {
+                    z-index: 2;
+                    top: 100px;
+                    left: 100px;
+                    background: rgb(17, 138, 178);
+                  }
+                  
+                  .green {
+                    z-index: 100; /* has no effect */
+                    background: rgb(6, 214, 160);
+                  }
+                  
+                  .orange {
+                    z-index: 3;
+                    height: 20%;
+                    width: 20%;
+                    background: rgb(255, 209, 102);
+                    font-size: 14px;
+                  }
+                  
+                  .purple {
+                    z-index: 0;
+                    background: rgb(139, 91, 211);
+                    top: 40px;
+                    left: 40px;
+                  }
+                  
+                  div {
+                    color: white;
+                    font-family: "Courier New", Courier, monospace;
+                    text-align: right;
+                    padding: 5px;
+                    box-sizing: border-box;
+                    height: 150px;
+                    width: 150px;
+                  }
 
                 
         }//closes board members
@@ -150,7 +218,7 @@
         width: 100%;
         height: 40vh;
         opacity: unset;;
-    }
+    }//closes apron
   
 
 
@@ -167,6 +235,9 @@
     width: 100%;
     height: 33vh;
     background-color: #7C7AF6;
+    h2 {
+        color: @porcelain;
+    }
 }
 .Hunter {
     width: 100%;
@@ -177,7 +248,10 @@
 .Gris {
     width: 100%;
     height: 33vh;
-    background-color:  #7C7AF6;;
+    background-color:  #7C7AF6;
+    h2 {
+        color: @porcelain; 
+    }
 
 } 
 .Mike {
