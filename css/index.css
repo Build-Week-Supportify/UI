@@ -279,12 +279,11 @@ footer span {
 .big-container header b {
   font-weight: bolder;
 }
-.big-container header h3 {
+.big-container header h1 {
   text-align: center;
   height: 8vh;
   margin: 4% 0;
   color: #005486;
-  font-size: 3rem;
 }
 .big-container header .pic-wrapper {
   position: relative;
@@ -301,10 +300,6 @@ footer span {
   .big-container header .pic-wrapper {
     display: none;
   }
-}
-.big-container header .pic-wrapper h1 {
-  position: absolute;
-  z-index: 1;
 }
 .big-container header .pic-wrapper .topbkgrd {
   width: 100%;
@@ -325,17 +320,34 @@ footer span {
   width: 100%;
   height: 50vh;
 }
-.big-container .middle-section .buy-points {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 60%;
-}
-.big-container .middle-section h3 {
-  padding: 2%;
-  text-transform: uppercase;
+.big-container .middle-section h2 {
   text-align: center;
-  font-weight: bolder;
+  padding: 3%;
+}
+.big-container .middle-section .buy-pts-crd {
+  display: flex;
+  max-width: 100%;
+  height: 100%;
+}
+.big-container .middle-section .flip-card {
+  background-color: transparent;
+  width: 40%;
+  height: 30vh;
+  perspective: 30vw;
+}
+.big-container .middle-section .flip-card-inner {
+  width: 50%;
+  height: 30vh;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.big-container .middle-section .flip-card-inner ul {
+  font-family: 'ubuntu', sans-serif;
+  font-size: 1.7rem;
+  text-align: center;
+  margin-top: 17%;
 }
 .big-container .middle-section .flip-card-front {
   width: 25%;
@@ -356,37 +368,6 @@ footer span {
   background-color: #973FFF;
   border-radius: 6px;
 }
-.big-container .middle-section .flip-card {
-  background-color: transparent;
-  width: 40%;
-  height: 30vh;
-  perspective: 30vw;
-}
-.big-container .middle-section .flip-card-inner {
-  position: relative;
-  width: 50%;
-  height: 30vh;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-.big-container .middle-section .flip-card-inner ul {
-  font-family: 'ubuntu', sans-serif;
-  font-size: 1.7rem;
-  text-align: center;
-  margin-top: 17%;
-}
-.big-container .middle-section .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-.big-container .middle-section .flip-card-front,
-.big-container .middle-section .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 30vh;
-  backface-visibility: hidden;
-}
 .big-container .middle-section .flip-card-back {
   background-color: #973FFF;
   padding: 2%;
@@ -405,9 +386,40 @@ footer span {
   padding-bottom: 4%;
   background-color: #F6F7F8;
   border-radius: 6px;
+  margin-bottom: 25%;
 }
-.big-container .middle-section .flip-card-front2 {
-  width: 25%;
+.big-container .middle-section .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.big-container .middle-section .flip-card-front,
+.big-container .middle-section .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 30vh;
+  backface-visibility: hidden;
+}
+.big-container .middle-section .flip-card2 {
+  background-color: transparent;
+  width: 40%;
+  height: 30vh;
+  perspective: 30vw;
+  left: 50%;
+}
+.big-container .middle-section .flip-card2 .flip-card-inner2 {
+  width: 50%;
+  height: 30vh;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.big-container .middle-section .flip-card2 .flip-card-inner2 ul {
+  font-family: 'ubuntu', sans-serif;
+  font-size: 1.7rem;
+  text-align: center;
+  margin-top: 17%;
+}
+.big-container .middle-section .flip-card2 .flip-card-inner2 .flip-card-front2 {
   height: 30vh;
   background-color: #FEF9E7;
   padding: 2%;
@@ -418,45 +430,19 @@ footer span {
   max-width: 100%;
   text-align: center;
 }
-.big-container .middle-section .flip-card-front2 h4 {
+.big-container .middle-section .flip-card2 .flip-card-inner2 .flip-card-front2 h4 {
   font-size: 2rem;
   text-align: center;
   color: #F6F7F8;
   background-color: #973FFF;
   border-radius: 6px;
 }
-.big-container .middle-section .flip-card2 {
-  background-color: transparent;
-  width: 40%;
-  height: 30vh;
-  perspective: 30vw;
-  left: 50%;
+.big-container .middle-section .flip-card2 .flip-card-inner2 .flip-card-front2 .clr-chg-frt {
+  background-color: #F7DC6F;
+  color: #973FFF;
+  height: 6vh;
 }
-.big-container .middle-section .flip-card-inner2 {
-  position: relative;
-  width: 50%;
-  height: 30vh;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-.big-container .middle-section .flip-card-inner2 ul {
-  font-family: 'ubuntu', sans-serif;
-  font-size: 1.7rem;
-  text-align: center;
-}
-.big-container .middle-section .flip-card2:hover .flip-card-inner2 {
-  transform: rotateY(180deg);
-}
-.big-container .middle-section .flip-card-front2,
-.big-container .middle-section .flip-card-back2 {
-  position: absolute;
-  width: 100%;
-  height: 30vh;
-  backface-visibility: hidden;
-}
-.big-container .middle-section .flip-card-back2 {
+.big-container .middle-section .flip-card2 .flip-card-inner2 .flip-card-back2 {
   background-color: #973FFF;
   padding: 2%;
   border-radius: 3%;
@@ -467,13 +453,27 @@ footer span {
   max-width: 100%;
   text-align: center;
 }
-.big-container .middle-section .flip-card-back2 h4 {
+.big-container .middle-section .flip-card2 .flip-card-inner2 .flip-card-back2 h4 {
   font-size: 1.7rem;
   text-align: center;
   color: #23293B;
   padding-bottom: 4%;
   background-color: #F6F7F8;
   border-radius: 6px;
+  margin-bottom: 25%;
+}
+.big-container .middle-section .flip-card2 .flip-card-inner2 .flip-card-back2 .clr-chg-bk {
+  background-color: #F7DC6F;
+}
+.big-container .middle-section .flip-card2:hover .flip-card-inner2 {
+  transform: rotateY(180deg);
+}
+.big-container .middle-section .flip-card-front2,
+.big-container .middle-section .flip-card-back2 {
+  position: absolute;
+  width: 100%;
+  height: 30vh;
+  backface-visibility: hidden;
 }
 .big-container .middle-section .text2 {
   width: 100%;
