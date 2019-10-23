@@ -176,11 +176,22 @@ body .top-nav {
   width: 100%;
   background-color: #F7DC6F;
 }
+@media (max-width: 500px) {
+  body .top-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 body a {
   text-decoration: none;
   padding: 2%;
   margin: 2% 3%;
   font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  body a {
+    font-size: 2rem;
+  }
 }
 body .btn {
   width: 10%;
@@ -195,6 +206,16 @@ body .btn {
 body .btn:hover {
   background-color: #F6F7F8;
   color: #973FFF;
+}
+@media (max-width: 800px) {
+  body .btn {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  body .btn {
+    width: 30%;
+  }
 }
 body .btn:hover {
   background-color: #F6F7F8;
@@ -214,6 +235,16 @@ body .btn1 {
 body .btn1:hover {
   background-color: #F6F7F8;
   color: #973FFF;
+}
+@media (max-width: 800px) {
+  body .btn1 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  body .btn1 {
+    width: 30%;
+  }
 }
 body .btn1:hover {
   background-color: #F6F7F8;
@@ -247,7 +278,7 @@ footer span {
   text-align: center;
   height: 8vh;
   margin: 4% 0;
-  color: #973FFF;
+  color: #005486;
   font-size: 3rem;
 }
 .big-container header .pic-wrapper {
@@ -256,6 +287,11 @@ footer span {
   color: #F6F7F8;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .big-container header .pic-wrapper {
+    display: none;
+  }
+}
 .big-container header .pic-wrapper h1 {
   position: absolute;
   z-index: 1;
@@ -263,11 +299,16 @@ footer span {
 .big-container header .pic-wrapper .topbkgrd {
   width: 100%;
 }
+@media (max-width: 500px) {
+  .big-container header .pic-wrapper .topbkgrd {
+    display: none;
+  }
+}
 .big-container .middle-section {
   border-radius: 6px;
+  background-color: #ACF1FF;
   width: 100%;
   height: 50vh;
-  background-color: #62D0DF;
 }
 .big-container .middle-section .buy-points {
   display: flex;
@@ -289,7 +330,7 @@ footer span {
 .big-container .middle-section .administrators {
   width: 40%;
   height: 35vh;
-  background-color: #F6F7F8;
+  background-color: #FEF9E7;
   padding: 2%;
   border-radius: 3%;
   color: #005486;
@@ -303,7 +344,7 @@ footer span {
 .big-container .middle-section .board-members {
   width: 40%;
   height: 35vh;
-  background-color: #F6F7F8;
+  background-color: #FEF9E7;
   padding: 2%;
   border-radius: 3%;
   color: #005486;
@@ -331,8 +372,8 @@ footer span {
 .big-container .testimonial-wrapper h2 {
   width: 35%;
   height: 5vh;
-  font-weight: 400;
-  color: #973FFF;
+  font-weight: bolder;
+  color: #005486;
 }
 .big-container .testimonial-wrapper .inner {
   align-items: flex-end;
@@ -340,13 +381,33 @@ footer span {
 }
 .big-container .testimonial-wrapper h4 {
   width: 100%;
-  font-size: 2rem;
-  margin-left: 10%;
+  font-size: 2.1rem;
+  margin-left: 2%;
   height: 8vh;
+  font-weight: lighter;
 }
 .big-container .aprons {
   width: 100%;
-  height: 40
-        2vh;
+  height: 40vh;
   opacity: unset;
+}
+.Ami {
+  width: 100%;
+  height: 33vh;
+  background-color: #7C7AF6;
+}
+.Hunter {
+  width: 100%;
+  height: 33vh;
+  background-color: #ACF1FF;
+}
+.Gris {
+  width: 100%;
+  height: 33vh;
+  background-color: #7C7AF6;
+}
+.Mike {
+  width: 100%;
+  height: 33vh;
+  background-color: #ACF1FF;
 }

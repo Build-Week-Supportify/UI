@@ -20,6 +20,11 @@
             justify-content: center;
             width: 100%;
             background-color: @nav-bg;
+           
+            @media@phone {
+                flex-direction: column;
+                text-align: center;
+            }
             
 
             
@@ -30,7 +35,13 @@
                 padding: 2%;
                 margin: 2% 3%;
                 font-size: 2.5rem;
-               
+                @media@tablet {
+
+                }
+                @media@phone {
+                    font-size: 2rem;
+
+                }    
                 
                 
             }//closes A
@@ -41,6 +52,10 @@
                 color: @lt-purple;
               }
             }//closes btn
+                @media@phone {
+                    
+
+                }
             .btn1 {
                 .custom-btn(@porcelain, @lt-purple);
                 &:hover{

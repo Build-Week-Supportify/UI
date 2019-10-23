@@ -17,32 +17,41 @@
             text-align: center;
             height: 8vh;
             margin: 4% 0;
-            color: @lt-purple;
+            color: @darkslategray;
             font-size: 3rem;;
     
-                    // background-color: @nav-bg;
+                   
         }//closes h3
+        // top picture
         .pic-wrapper {
             position: relative;                   
             width: 100%;
             color: @porcelain;
             text-align: center;
+            @media@phone {
+                display: none;
+            }
             h1 {
                 position: absolute;
                 z-index: 1                     
             }//closes H1           
                 .topbkgrd {
-                    width: 100%;       
+                    width: 100%;
+                    @media@phone {
+                        display: none;
+                        
+
+                    }       
                 }//closes topbkgrd
                                    
         }//closes pic wrapper
     }//closes header 
   .middle-section {
         border-radius: 6px;
-        background-color: @cyan;
+        background-color: @sky-blue ;
         width: 100%;
         height: 50vh;
-        background-color: @cyan;
+        
         .buy-points {
             display: flex;
             justify-content: space-around;
@@ -66,7 +75,7 @@
         .administrators {
             width: 40%;
             height: 35vh;
-            background-color: @porcelain;
+            background-color: #FEF9E7;
             padding: 2%;
             border-radius: 3%;
             color: @darkslategray;
@@ -80,7 +89,7 @@
         .board-members {
             width: 40%;
             height: 35vh;
-            background-color: @porcelain;
+            background-color: #FEF9E7;
             padding: 2%;
             border-radius: 3%;
             color: @darkslategray;
@@ -119,8 +128,8 @@
             h2 {
                 width: 35%;
                 height: 5vh;
-                font-weight: 400;
-                color: @lt-purple;
+                font-weight: bolder;
+                color: @darkslategray;
 
         }//closes h2
             .inner {
@@ -130,18 +139,19 @@
             }//closes inner
             h4 {
                 width: 100%;
-                font-size: 2rem;
-                margin-left: 10%;
+                font-size: 2.1rem;
+                margin-left: 2%;
                 height: 8vh;
+                font-weight: lighter;
                 
         }//closes h4    
     }//closes testimonial-wrapper
     .aprons {
         width: 100%;
-        height: 40
-        2vh;
+        height: 40vh;
         opacity: unset;;
     }
+  
 
 
 
@@ -150,3 +160,28 @@
  
 
 }//closes container
+////////////////////////////////////////
+/////Team Page/////////////////////////
+
+.Ami {
+    width: 100%;
+    height: 33vh;
+    background-color: #7C7AF6;
+}
+.Hunter {
+    width: 100%;
+    height: 33vh;
+    background-color: #ACF1FF;
+    
+}
+.Gris {
+    width: 100%;
+    height: 33vh;
+    background-color:  #7C7AF6;;
+
+} 
+.Mike {
+    width: 100%;
+    height: 33vh;
+    background-color: #ACF1FF;
+}
