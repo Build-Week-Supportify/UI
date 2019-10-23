@@ -285,6 +285,12 @@ footer span {
   margin: 4% 0;
   color: #005486;
 }
+@media (max-width: 500px) {
+  .big-container header h1 {
+    font-size: 2.5rem;
+    margin-top: 6%;
+  }
+}
 .big-container header .pic-wrapper {
   position: relative;
   width: 100%;
@@ -318,25 +324,37 @@ footer span {
   border-radius: 6px;
   background-color: #ACF1FF;
   width: 100%;
-  height: 50vh;
+  height: 100%;
 }
 .big-container .middle-section h2 {
   text-align: center;
   padding: 3%;
 }
 .big-container .middle-section .buy-pts-crd {
-  display: flex;
   max-width: 100%;
   height: 100%;
 }
+.big-container .middle-section .buy-pts-crd .card-wrap {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .big-container .middle-section .buy-pts-crd .card-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .big-container .middle-section .buy-pts-crd .card-wrap .custom-btn {
+    align-items: center;
+  }
+}
 .big-container .middle-section .flip-card {
   background-color: transparent;
-  width: 40%;
+  width: 50%;
   height: 30vh;
-  perspective: 30vw;
+  perspective: 1000vw;
+  margin: 4% 0;
 }
 .big-container .middle-section .flip-card-inner {
-  width: 50%;
+  width: 100%;
   height: 30vh;
   text-align: center;
   transition: transform 0.6s;
@@ -400,13 +418,13 @@ footer span {
 }
 .big-container .middle-section .flip-card2 {
   background-color: transparent;
-  width: 40%;
+  width: 50%;
   height: 30vh;
-  perspective: 30vw;
-  left: 50%;
+  perspective: 100vw;
+  margin: 4% 0;
 }
 .big-container .middle-section .flip-card2 .flip-card-inner2 {
-  width: 50%;
+  width: 100%;
   height: 30vh;
   text-align: center;
   transition: transform 0.6s;
@@ -489,19 +507,29 @@ footer span {
     display: none;
   }
 }
+.container {
+  max-width: 900px;
+}
 .Ami {
   width: 100%;
-  height: 33vh;
+  height: 1875%;
+  border: 1px solid gray;
+}
+.Ami .Abio {
+  width: 47%;
 }
 .Hunter {
   width: 100%;
-  height: 33vh;
+  height: 1875%;
+  border: 1px solid gray;
 }
 .Gris {
   width: 100%;
-  height: 33vh;
+  height: 1875%;
+  border: 1px solid gray;
 }
 .Mike {
   width: 100%;
-  height: 33vh;
+  height: 1875%;
+  border: 1px solid gray;
 }
