@@ -7,6 +7,7 @@
     @media@tablet {
         max-width: 700px;
     }
+    /// header contains top-pic and H3
     header {
 
         width: 100%;
@@ -45,6 +46,9 @@
                 .topbkgrd {
                     width: 100%;
                     @media@tablet {
+                        display: flex;
+                        overflow: hidden;
+                        max-width: 600px;
                        
 
                     }
@@ -126,6 +130,7 @@
                     color: @ebony-clay;
                     margin-bottom: 5%;
                 }
+        ////////////Layer stacking/////////////////////////////////////////        
                 pink, .blue, .orange, .purple {
                     position: absolute;
                   }
@@ -151,8 +156,8 @@
                   
                   .orange {
                     z-index: 3;
-                    height: 20%;
-                    width: 20%;
+                    height: 30%;
+                    width: 30%;
                     background: rgb(255, 209, 102);
                     font-size: 14px;
                   }
@@ -173,7 +178,7 @@
                     height: 150px;
                     width: 150px;
                   }
-
+/////////////////////////////////////////////////////
                 
         }//closes board members
         
@@ -183,43 +188,55 @@
                 height: 30%;
             }//close T2
   }//closes middle-section    
-    .testimonial-wrapper {
-        width:100%;
-        height: 25vh;
-        padding: 4% 0;
-        .testimls {
-            width: 100%;
-            height: 12vh;
-            display: flex;
-        }//closes testimls
+    // .testimonial-wrapper {
+    //     width:100%;
+    //     height: 25vh;
+    //     padding: 4% 0;
+    //     .testimls {
+    //         width: 100%;
+    //         height: 12vh;
+    //         display: flex;
+    //     }//closes testimls
 
-            h2 {
-                width: 35%;
-                height: 5vh;
-                font-weight: bolder;
-                color: @darkslategray;
+    //         h2 {
+    //             width: 35%;
+    //             height: 5vh;
+    //             font-weight: bolder;
+    //             color: @darkslategray;
+    //             @media@tablet {
+    //                 font-size: 2.3rem;
+    //                 margin-left: 2%;
+    //             }
 
-        }//closes h2
-            .inner {
-                align-items: flex-end;
-                width: 70%;
+    //     }//closes h2
+    //         .inner {
+    //             align-items: flex-end;
+    //             width: 70%;
                
-            }//closes inner
-            h4 {
-                width: 100%;
-                font-size: 2.1rem;
-                margin-left: 2%;
-                height: 8vh;
-                font-weight: lighter;
+    //         }//closes inner
+    //         h4 {
+    //             width: 100%;
+    //             font-size: 2.1rem;
+    //             margin-left: 2%;
+    //             height: 8vh;
+    //             font-weight: lighter;
+    //             @media@tablet {
+    //                 font-size: 1.7rem;
+    //                 margin-right: 9%;
+    //             }
                 
-        }//closes h4    
-    }//closes testimonial-wrapper
+    //     }//closes h4    
+    // }//closes testimonial-wrapper
     .aprons {
         width: 100%;
         height: 40vh;
-        opacity: unset;;
+        opacity: unset;
+        @media@tablet {
+            display: none;
+        }
     }//closes apron
-  
+
+
 
 
 
@@ -229,33 +246,4 @@
 
 }//closes container
 ////////////////////////////////////////
-/////Team Page/////////////////////////
 
-.Ami {
-    width: 100%;
-    height: 33vh;
-    background-color: #7C7AF6;
-    h2 {
-        color: @porcelain;
-    }
-}
-.Hunter {
-    width: 100%;
-    height: 33vh;
-    background-color: #ACF1FF;
-    
-}
-.Gris {
-    width: 100%;
-    height: 33vh;
-    background-color:  #7C7AF6;
-    h2 {
-        color: @porcelain; 
-    }
-
-} 
-.Mike {
-    width: 100%;
-    height: 33vh;
-    background-color: #ACF1FF;
-}

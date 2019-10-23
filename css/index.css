@@ -306,6 +306,13 @@ footer span {
 .big-container header .pic-wrapper .topbkgrd {
   width: 100%;
 }
+@media (max-width: 800px) {
+  .big-container header .pic-wrapper .topbkgrd {
+    display: flex;
+    overflow: hidden;
+    max-width: 600px;
+  }
+}
 @media (max-width: 500px) {
   .big-container header .pic-wrapper .topbkgrd {
     display: none;
@@ -388,8 +395,8 @@ footer span {
 }
 .big-container .middle-section .board-members .orange {
   z-index: 3;
-  height: 20%;
-  width: 20%;
+  height: 30%;
+  width: 30%;
   background: #ffd166;
   font-size: 14px;
 }
@@ -412,61 +419,29 @@ footer span {
   width: 100%;
   height: 30%;
 }
-.big-container .testimonial-wrapper {
-  width: 100%;
-  height: 25vh;
-  padding: 4% 0;
-}
-.big-container .testimonial-wrapper .testimls {
-  width: 100%;
-  height: 12vh;
-  display: flex;
-}
-.big-container .testimonial-wrapper h2 {
-  width: 35%;
-  height: 5vh;
-  font-weight: bolder;
-  color: #005486;
-}
-.big-container .testimonial-wrapper .inner {
-  align-items: flex-end;
-  width: 70%;
-}
-.big-container .testimonial-wrapper h4 {
-  width: 100%;
-  font-size: 2.1rem;
-  margin-left: 2%;
-  height: 8vh;
-  font-weight: lighter;
-}
 .big-container .aprons {
   width: 100%;
   height: 40vh;
   opacity: unset;
 }
+@media (max-width: 800px) {
+  .big-container .aprons {
+    display: none;
+  }
+}
 .Ami {
   width: 100%;
   height: 33vh;
-  background-color: #7C7AF6;
-}
-.Ami h2 {
-  color: #F6F7F8;
 }
 .Hunter {
   width: 100%;
   height: 33vh;
-  background-color: #ACF1FF;
 }
 .Gris {
   width: 100%;
   height: 33vh;
-  background-color: #7C7AF6;
-}
-.Gris h2 {
-  color: #F6F7F8;
 }
 .Mike {
   width: 100%;
   height: 33vh;
-  background-color: #ACF1FF;
 }
