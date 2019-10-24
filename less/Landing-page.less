@@ -23,8 +23,8 @@
             }
         h1 {
             text-align: center;
-            height: 8vh;
-            margin: 4% 0;
+            height: 10vh;
+            // margin: 4% 0;
             color: @darkslategray;
             @media@phone {
                 font-size: 2.5rem;
@@ -82,11 +82,8 @@
             background-color: @nav-bg;
             // width: 30%;
             height: 100%;
-            .btn {
-              
-
-            }
-        }
+            
+        }//closes but-wrap
         .row {
             margin: 2%;
         }
@@ -138,9 +135,10 @@
                     }
                     ul {
                         font-family: 'ubuntu', sans-serif;
-                        font-size: 1.7rem;
+                        font-size: 2rem;
                         text-align: center;
                         margin-top: 17%;
+                        color: @darkslategray;
                     }//closes ul
                                
           }//closes flip card inner
@@ -159,7 +157,7 @@
                             ///card styles//////
                             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
                             max-width: 100%;
-                            // margin: auto;
+                            
                             text-align: center;
                                 h4 {
                                     font-size: 2rem;
@@ -167,6 +165,7 @@
                                     color: @porcelain;
                                     background-color: @lt-purple;
                                     border-radius: 6px;
+                                    height: 4vh;
                                 }//closes H4
                             
                         }//closes admin-frt-card
@@ -186,13 +185,13 @@
                             // margin: auto;
                             text-align: center;
                                 h4 {
-                                    font-size: 1.7rem;
+                                    font-size: 2rem;
                                     text-align: center;
                                     color: @ebony-clay;
                                     padding-bottom: 4%;
                                     background-color: @porcelain;
                                     border-radius: 6px;
-                                    margin-bottom: 25%;
+                                    // margin-bottom: 25%;
                                 }//closes  H4
                                 
                         }//closes flip card back
@@ -230,9 +229,10 @@
                         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
                         ul {
                             font-family: 'ubuntu', sans-serif;
-                            font-size: 1.7rem;
+                            font-size: 2rem;
                             text-align: center;
-                            margin-top: 17%;
+                            margin-top: 10%;
+                            color: @darkslategray;
                         }//closes UL
                         .flip-card-front2 {
                             // width: 25%;
@@ -254,14 +254,25 @@
                                 text-align: center;
                                 color: @porcelain;
                                 background-color: @lt-purple;
-                                border-radius: 6px;                                
+                                border-radius: 6px;
+                                height: 4vh;                                
                             }//closes H4
                             .clr-chg-frt {
                                 background-color: @nav-bg;
                                 color: @lt-purple;
-                                height: 6vh;
+                                height: 5vh;
+                                h4 {
+                                    padding: 2% 0;
+                                }
+                                .btn {
+                                    
+                                    width: 50%;
+                                    font-size: 1rem;
+                                    align-items: center;
+                                    
+                                }//closes btn
                                 
-                            }
+                            }//closes clr-chg-frt
                         }//closes front card 2
                         .flip-card-back2 {
                             background-color:@lt-purple;
@@ -278,7 +289,7 @@
                             // margin: auto;
                             text-align: center;
                             h4 {
-                                font-size: 1.7rem;
+                                font-size: 2rem;
                                 text-align: center;
                                 color: @ebony-clay;
                                 padding-bottom: 4%;
@@ -288,6 +299,12 @@
                             }//close H4
                             .clr-chg-bk {
                                 background-color: @nav-bg;
+                                .btn {
+                                    width: 50%;
+                                }
+                                h4 {
+                                    font-size: 1rem;
+                                }
                             }
 
                         }//closes flip card back 2
