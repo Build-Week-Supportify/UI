@@ -1,3 +1,11 @@
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -158,7 +166,7 @@ p {
 body {
   margin: 0 auto;
   height: 100%;
-  background-color: #D5F5E3;
+  background-color: #F6F7F8;
 }
 @media (max-width: 800px) {
   body {
@@ -200,9 +208,9 @@ body a {
     font-size: 2rem;
   }
 }
-body .btn {
-  width: 100%;
-  height: 3.5vh;
+body a .btn {
+  width: 40%;
+  height: 1vh;
   font-size: 1.5rem;
   border-radius: 5px;
   background: #973FFF;
@@ -210,37 +218,38 @@ body .btn {
   margin-top: 50%;
   margin-right: 7%;
 }
-body .btn:hover {
+body a .btn:hover {
   background-color: #F6F7F8;
   color: #973FFF;
 }
 @media (max-width: 800px) {
-  body .btn {
+  body a .btn {
     font-size: 1rem;
   }
 }
 @media (max-width: 500px) {
-  body .btn {
+  body a .btn {
     width: 40%;
   }
 }
-body .btn:hover {
+body a .btn:hover {
   background-color: #F6F7F8;
   color: #973FFF;
+  width: 100%;
 }
 @media (max-width: 800px) {
-  body .btn {
+  body a .btn {
     width: 30%;
   }
 }
 @media (max-width: 500px) {
-  body .btn {
+  body a .btn {
     margin-left: 35%;
   }
 }
-body .btn1 {
-  width: 100%;
-  height: 3.5vh;
+body a .btn1 {
+  width: 40%;
+  height: 1vh;
   font-size: 1.5rem;
   border-radius: 5px;
   background: #973FFF;
@@ -249,32 +258,33 @@ body .btn1 {
   margin-right: 7%;
   margin-right: 4%;
   margin-left: 4%;
+  height: 10%;
 }
-body .btn1:hover {
+body a .btn1:hover {
   background-color: #F6F7F8;
   color: #973FFF;
 }
 @media (max-width: 800px) {
-  body .btn1 {
+  body a .btn1 {
     font-size: 1rem;
   }
 }
 @media (max-width: 500px) {
-  body .btn1 {
+  body a .btn1 {
     width: 40%;
   }
 }
-body .btn1:hover {
+body a .btn1:hover {
   background-color: #F6F7F8;
   color: #973FFF;
 }
 @media (max-width: 800px) {
-  body .btn1 {
+  body a .btn1 {
     width: 30%;
   }
 }
 @media (max-width: 500px) {
-  body .btn1 {
+  body a .btn1 {
     margin-left: 35%;
   }
 }
@@ -423,7 +433,7 @@ footer .icon-bar a i .fab {
   font-family: 'ubuntu', sans-serif;
   font-size: 2rem;
   text-align: center;
-  margin-top: 17%;
+  margin-top: 10%;
   color: #005486;
 }
 .big-container .middle-section .flip-card-front {
@@ -464,6 +474,9 @@ footer .icon-bar a i .fab {
   padding-bottom: 4%;
   background-color: #F6F7F8;
   border-radius: 6px;
+}
+.big-container .middle-section .flip-card-back ul {
+  margin-top: 15%;
 }
 .big-container .middle-section .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
@@ -528,6 +541,9 @@ footer .icon-bar a i .fab {
   font-size: 1rem;
   align-items: center;
 }
+.big-container .middle-section .flip-card2 .flip-card-inner2 .flip-card-front2 ul {
+  margin-top: 19%;
+}
 .big-container .middle-section .flip-card2 .flip-card-inner2 .flip-card-back2 {
   background-color: #973FFF;
   padding: 2%;
@@ -557,6 +573,9 @@ footer .icon-bar a i .fab {
 }
 .big-container .middle-section .flip-card2 .flip-card-inner2 .flip-card-back2 .clr-chg-bk h4 {
   font-size: 1rem;
+}
+.big-container .middle-section .flip-card2 .flip-card-inner2 .flip-card-back2 ul {
+  margin-bottom: 10%;
 }
 .big-container .middle-section .flip-card2:hover .flip-card-inner2 {
   transform: rotateY(180deg);
@@ -652,6 +671,10 @@ footer .icon-bar a i .fab {
 }
 .row {
   background-color: #80dfff;
+}
+.mike {
+  width: 30vw;
+  height: 50vh;
 }
 /* Three columns side by side */
 .column {
