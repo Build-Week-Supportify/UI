@@ -179,15 +179,9 @@ body .top-nav {
 body .top-nav i.fab {
   width: 10%;
 }
-body .top-nav .social {
-  width: 10%;
-}
-body .top-nav .social i {
-  margin-top: 22%;
-  padding: ;
-}
 body .top-nav h1 {
   padding-top: 11%;
+  margin-right: 4%;
 }
 @media (max-width: 500px) {
   body .top-nav {
@@ -227,12 +221,22 @@ body .btn:hover {
 }
 @media (max-width: 500px) {
   body .btn {
-    width: 30%;
+    width: 40%;
   }
 }
 body .btn:hover {
   background-color: #F6F7F8;
   color: #973FFF;
+}
+@media (max-width: 800px) {
+  body .btn {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  body .btn {
+    margin-left: 35%;
+  }
 }
 body .btn1 {
   width: 10%;
@@ -244,6 +248,7 @@ body .btn1 {
   margin-top: 3%;
   margin-right: 7%;
   margin-right: 4%;
+  margin-left: 4%;
 }
 body .btn1:hover {
   background-color: #F6F7F8;
@@ -256,12 +261,22 @@ body .btn1:hover {
 }
 @media (max-width: 500px) {
   body .btn1 {
-    width: 30%;
+    width: 40%;
   }
 }
 body .btn1:hover {
   background-color: #F6F7F8;
   color: #973FFF;
+}
+@media (max-width: 800px) {
+  body .btn1 {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  body .btn1 {
+    margin-left: 35%;
+  }
 }
 footer .icon-bar {
   width: 100%;
@@ -320,8 +335,9 @@ footer .icon-bar a i .fab {
 }
 @media (max-width: 500px) {
   .big-container .header h1 {
-    font-size: 2.5rem;
+    font-size: 1rem;
     margin-top: 6%;
+    margin-bottom: 4%;
   }
 }
 .big-container .header .pic-wrapper {
@@ -386,9 +402,6 @@ footer .icon-bar a i .fab {
 @media (max-width: 500px) {
   .big-container .middle-section .buy-pts-crd .card-wrap {
     flex-direction: column;
-    align-items: center;
-  }
-  .big-container .middle-section .buy-pts-crd .card-wrap .custom-btn {
     align-items: center;
   }
 }
@@ -482,7 +495,6 @@ footer .icon-bar a i .fab {
   font-family: 'ubuntu', sans-serif;
   font-size: 2rem;
   text-align: center;
-  margin-top: 10%;
   color: #005486;
 }
 .big-container .middle-section .flip-card2 .flip-card-inner2 .flip-card-front2 {
@@ -542,6 +554,7 @@ footer .icon-bar a i .fab {
 }
 .big-container .middle-section .flip-card2 .flip-card-inner2 .flip-card-back2 .clr-chg-bk .btn {
   width: 50%;
+  margin-right: 20%;
 }
 .big-container .middle-section .flip-card2 .flip-card-inner2 .flip-card-back2 .clr-chg-bk h4 {
   font-size: 1rem;
